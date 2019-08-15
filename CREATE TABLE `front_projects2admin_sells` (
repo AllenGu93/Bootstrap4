@@ -1,0 +1,23 @@
+CREATE TABLE `front_projects2admin_sells` (
+ `p2s_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID|add=ignore&edit=hidden',
+ `app_key` varchar(32) NOT NULL COMMENT '应用key|add=text&edit=text',
+ `au_id` int(11) NOT NULL COMMENT '组员ID|add=text&edit=text',
+ `p2s_created` datetime NOT NULL COMMENT '创建时间|add=datetime&edit=datetime',
+ `p2s_updated` datetime NOT NULL COMMENT '修改时间|add=datetime&edit=datetime',
+ `p2s_deleted` datetime NOT NULL COMMENT '删除时间|add=datetime&edit=datetime',
+ `p2s_status` tinyint(4) NOT NULL COMMENT '状态|add=ignore&edit=ignore',
+ PRIMARY KEY (`p2s_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+CREATE TABLE `front_customers2admin_sells` (
+ `c2s_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID|add=ignore&edit=hidden',
+ `u_key` varchar(32) NOT NULL COMMENT '用户key|add=text&edit=text',
+ `au_id` int(11) NOT NULL COMMENT '组员ID|add=text&edit=text',
+ `c2s_created` datetime NOT NULL COMMENT '创建时间|add=datetime&edit=datetime',
+ `c2s_updated` datetime NOT NULL COMMENT '修改时间|add=datetime&edit=datetime',
+ `c2s_deleted` datetime NOT NULL COMMENT '删除时间|add=datetime&edit=datetime',
+ `c2s_status` tinyint(4) NOT NULL COMMENT '状态|add=ignore&edit=ignore',
+ PRIMARY KEY (`c2s_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+www/branches/front_workspace/allen/application/models/app_model.ph
