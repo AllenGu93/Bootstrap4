@@ -19,7 +19,7 @@
         "vue": "^2.1.10"
     },
     "dependencies": {
-        "angular": "^1.7.5",
+        "angular": "^1.8.3",
         "ui-router": "^1.0.0-alpha.3"
     }
 }
